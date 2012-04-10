@@ -35,10 +35,8 @@
                 {% if navigable.title %}
                 <li class="{% if page.url == navigable.url %}active{% endif %}">
                   <a href="{{ navigable.url }}">{{ navigable.title }}</a>
-				  </li>
                 {% endif %}
               {% endfor %}
-			  <li class="active">
                   <a href="mailto:sgopaldwivedi@gmail.com">Contact</a>
                 </li>
             </ul>

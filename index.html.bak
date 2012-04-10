@@ -1,11 +1,11 @@
 ---
-title: Bit Computers
+title: Welcome
 layout: default
 ---
 
 <header class="hero-unit clearfix" id="overview">
   <div id="logo" class="span3">
-    <img src="/img/pc.jpg" width="240" height="180" class="spinto-editable" id="logo-image" />
+    <img src="/img/bar-240.jpg" width="240" height="180" class="spinto-editable" id="logo-image" />
   </div>
   <div class="spinto-editable span7" id="headline-content">
     <h1>{{ site.title }}</h1>

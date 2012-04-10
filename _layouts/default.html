@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/stylesheets/application.css">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-touch-icon-114x114.png">
+  </head>
+  <body>
+  <!-- Navbar
+    ================================================== -->
+    <div class="container">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="brand">
+                {{ site.title }}
+              </li>
+              {% for navigable in site.pages sort_by:title order:descending %}
+                {% if navigable.title %}
+                <li class="{% if page.url == navigable.url %}active{% endif %}">
+                  <a href="{{ navigable.url }}">{{ navigable.title }}</a>
+                </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="container">
+      {{ content }}
+    </div>
+
+    <div class="container">
+      <footer>
+        <hr />
+        <div id="footer-content">
+          <a href="http://www.spintoapp.com">
+            <img src="//assets.spintoapp.com/assets/powered-by-spinto-32.png" style="float:left" />
+          </a>
+          <p style="margin-top:5px;margin-left:12px;float:left">
+            <small>&copy; {{ site.title }}.</small>
+          </p>
+          <br class="clear" />
+          <br class="clear" />
+          <br class="clear" />
+        </div>
+      </footer>
+    <div>
+  </body>
+</html>

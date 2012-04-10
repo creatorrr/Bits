@@ -1,0 +1,33 @@
+---
+title: News
+layout: default
+---
+
+<header class="clearfix">
+<br />
+
+<h1 class="spinto-editable" id="headline">News & Announcements from {{ site.title }}</h1>
+ <hr />
+</header>
+
+<div class="clearfix">
+
+<div class="span7">
+{% for post in site.posts %}
+  <h3>{{ post.title }}</h3>
+  <p><small>{{ post.date | date_to_long_string }} - <a href="{{ post.url }}">Link to "{{ post.title }}"</a></small></p>
+  <div>{{ post.content }}</div>
+  <br />
+{% endfor %}
+</div>
+
+<div class="span4">
+  <div class="spinto-editable well" id="blog-notes">
+    <h3>Hi there!</h3>
+    <p>Bit Computers has been dedicated to spreading computer literacy amongst the youth. Get in touch if
+      you have any questions: <a href="mailto:sgopaldwivedi@gmail.com">send us an email.</a>.</p>
+  </div>
+</div>
+
+
+</div>

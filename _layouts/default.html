@@ -35,9 +35,10 @@
                 {% if navigable.title %}
                 <li class="{% if page.url == navigable.url %}active{% endif %}">
                   <a href="{{ navigable.url }}">{{ navigable.title }}</a>
-                </li>
                 {% endif %}
               {% endfor %}
+                  <a href="mailto:sgopaldwivedi@gmail.com">Contact</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -53,9 +54,6 @@
       <footer>
         <hr />
         <div id="footer-content">
-          <a href="http://www.spintoapp.com">
-            <img src="//assets.spintoapp.com/assets/powered-by-spinto-32.png" style="float:left" />
-          </a>
           <p style="margin-top:5px;margin-left:12px;float:left">
             <small>&copy; {{ site.title }}.</small>
           </p>

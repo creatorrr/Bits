@@ -3,12 +3,9 @@ title: Welcome to our new website
 layout: post
 ---
 
-When we opened this spot in 1990, the Internet
-was the furthest thing from our minds! But the times have
-changed, and we're happy to be online.
+Bit Computers has been dedicated to spreading computer literacy amongst the youth.
 
-Keep your eye on our website and blog for announcements
-about shows, special events, and stories from our little
-shop.
+We are proud to unveil our new website.   
+All announcements and admission related information will be posted here shortly.
 
-Much love: **Nick & Sarah**
+Regards: **Mr. Gopal Dwivedi**
